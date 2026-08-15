@@ -53,6 +53,9 @@ try {
 // ============================================================
 // FIREBASE ADMIN
 // ============================================================
+// ============================================================
+// FIREBASE ADMIN
+// ============================================================
 
 let admin = null;
 let db = null;
@@ -63,10 +66,9 @@ try {
 
   let serviceAccount = null;
 
-  // ----------------------------------------------------------
-  // OPTION 1:
-  // firebase-service-account.json
-  // ----------------------------------------------------------
+  // ==========================================================
+  // OPTION 1: LOCAL JSON FILE
+  // ==========================================================
 
   const serviceAccountPath = path.join(
     __dirname,
@@ -88,10 +90,9 @@ try {
     }
   }
 
-  // ----------------------------------------------------------
-  // OPTION 2:
-  // FIREBASE_SERVICE_ACCOUNT_JSON
-  // ----------------------------------------------------------
+  // ==========================================================
+  // OPTION 2: RENDER ENVIRONMENT VARIABLE
+  // ==========================================================
 
   if (
     !serviceAccount &&
@@ -113,25 +114,21 @@ try {
     }
   }
 
-  // ----------------------------------------------------------
+  // ==========================================================
   // INITIALIZE FIREBASE
-  // ----------------------------------------------------------
+  // ==========================================================
 
   if (serviceAccount) {
-    if (!admin.apps.length) {
-      admin.initializeApp({
-        credential: admin.credential.cert(
-          serviceAccount
-        )
-      });
-    }
+    admin.initializeApp({
+      credential: admin.credential.cert(serviceAccount)
+    });
 
     db = admin.firestore();
 
     firebaseReady = true;
 
     console.log(
-      "Firebase Firestore connected."
+      "Firebase Firestore connected successfully."
     );
   } else {
     console.log(
@@ -142,7 +139,9 @@ try {
       "Server will run in demo/local mode."
     );
   }
+
 } catch (error) {
+
   console.error(
     "Firebase initialization error:",
     error.message
@@ -150,7 +149,6 @@ try {
 
   firebaseReady = false;
 }
-
 // ============================================================
 // RAZORPAY INITIALIZATION
 // ============================================================
