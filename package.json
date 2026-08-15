@@ -1,0 +1,17 @@
+{
+  "name": "pure-veda-farm-ecommerce",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "firebase": "^12.17.1",
+    "firebase-admin": "^14.2.0",
+    "multer": "^2.2.0",
+    "razorpay": "^2.9.6"
+  }
+}

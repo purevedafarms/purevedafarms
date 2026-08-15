@@ -1,0 +1,3081 @@
+
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<title>Pure Veda Farm — Premium Desi Cow Ghee</title>
+
+<meta
+  name="description"
+  content="Pure Veda Farm traditionally prepared pure cow ghee. Shop 500 ml glass jars online."
+>
+
+<style>
+:root{
+  --cream:#FFFDD0;
+  --cream2:#fff8df;
+  --brown:#241207;
+  --brown2:#3a1e0d;
+  --gold:#FFD700;
+  --gold2:#c89114;
+  --ink:#21140d;
+  --muted:#735f4f;
+  --white:#fffdf7;
+  --line:rgba(90,57,20,.15);
+  --shadow:0 25px 70px rgba(40,20,5,.16)
+}
+
+*{
+  box-sizing:border-box
+}
+
+html{
+  scroll-behavior:smooth
+}
+
+body{
+  margin:0;
+  font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;
+  background:var(--cream);
+  color:var(--ink)
+}
+
+a{
+  text-decoration:none;
+  color:inherit
+}
+
+.nav{
+  position:sticky;
+  top:0;
+  z-index:50;
+  background:rgba(36,18,7,.96);
+  backdrop-filter:blur(14px);
+  color:#fff;
+  padding:16px 5vw;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  border-bottom:1px solid rgba(255,215,0,.25)
+}
+
+.logo{
+  display:flex;
+  gap:12px;
+  align-items:center
+}
+
+.logo-mark{
+  width:50px;
+  height:50px;
+  border:1px solid var(--gold);
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  color:var(--gold);
+  font-family:Georgia;
+  font-size:24px
+}
+
+.logo b{
+  font-family:Georgia;
+  font-size:24px;
+  letter-spacing:.08em;
+  color:var(--gold)
+}
+
+.logo small{
+  display:block;
+  letter-spacing:.18em;
+  font-size:9px;
+  color:#fff8dc;
+  margin-top:3px
+}
+
+.navlinks{
+  display:flex;
+  gap:28px;
+  align-items:center;
+  font-size:14px
+}
+
+.navlinks a:hover{
+  color:var(--gold)
+}
+
+.cart-btn,
+.order-btn{
+  border:1px solid var(--gold);
+  color:var(--gold);
+  background:transparent;
+  border-radius:999px;
+  padding:11px 18px;
+  font-weight:700;
+  cursor:pointer
+}
+
+.cart-btn span{
+  background:var(--gold);
+  color:#27170b;
+  border-radius:50%;
+  padding:2px 7px;
+  margin-left:5px
+}
+
+.hero{
+  min-height:730px;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  overflow:hidden
+}
+
+.hero-copy{
+  padding:90px 7vw 70px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  background:radial-gradient(
+    circle at 20% 20%,
+    #fffef2 0,
+    #FFFDD0 48%,
+    #f7efc7 100%
+  )
+}
+
+.eyebrow{
+  color:#9c6810;
+  font-size:12px;
+  letter-spacing:.25em;
+  font-weight:800
+}
+
+.hero h1{
+  font-family:Georgia,serif;
+  font-weight:500;
+  font-size:clamp(52px,6vw,92px);
+  line-height:.93;
+  margin:18px 0 28px
+}
+
+.hero h1 em{
+  font-style:normal;
+  color:#c88a0c
+}
+
+.hero p{
+  font-size:18px;
+  line-height:1.8;
+  color:#6b5545;
+  max-width:650px
+}
+
+.cta{
+  display:flex;
+  gap:12px;
+  flex-wrap:wrap;
+  margin-top:25px
+}
+
+.primary{
+  background:var(--brown);
+  color:#fff;
+  padding:15px 24px;
+  border-radius:999px;
+  font-weight:800;
+  border:0;
+  cursor:pointer
+}
+
+.secondary{
+  border:1px solid #c99b32;
+  padding:15px 24px;
+  border-radius:999px;
+  font-weight:800;
+  background:transparent
+}
+
+.hero-visual{
+  position:relative;
+  background:radial-gradient(
+    circle at 50% 35%,
+    #5b3113,
+    #2b1407 70%
+  );
+  display:grid;
+  place-items:center;
+  min-height:650px;
+  overflow:hidden
+}
+
+.hero-visual:before{
+  content:"";
+  position:absolute;
+  width:600px;
+  height:600px;
+  border-radius:50%;
+  background:radial-gradient(
+    circle,
+    #d79a21 0,
+    rgba(215,154,33,.13) 35%,
+    transparent 68%
+  );
+  filter:blur(8px)
+}
+
+#three{
+  position:absolute;
+  inset:0;
+  z-index:1
+}
+
+.jar-wrap{
+  position:relative;
+  z-index:3;
+  width:min(390px,58%);
+  transform:rotate(1deg);
+  filter:drop-shadow(0 30px 35px rgba(0,0,0,.38))
+}
+
+.jar-wrap img{
+  width:100%;
+  display:block;
+  border-radius:18px
+}
+
+.three-hint{
+  position:absolute;
+  bottom:25px;
+  left:50%;
+  transform:translateX(-50%);
+  z-index:4;
+  color:#f9e5a4;
+  font-size:11px;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  white-space:nowrap
+}
+
+.section{
+  padding:90px 7vw
+}
+
+.section-head{
+  text-align:center;
+  max-width:760px;
+  margin:0 auto 45px
+}
+
+.section-head .eyebrow{
+  margin-bottom:10px
+}
+
+.section h2{
+  font:500 clamp(36px,5vw,58px)/1.05 Georgia,serif;
+  margin:0 0 14px
+}
+
+.section-head p{
+  color:var(--muted);
+  line-height:1.75
+}
+
+.features{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:16px
+}
+
+.feature,
+.card{
+  background:rgba(255,255,255,.56);
+  border:1px solid var(--line);
+  border-radius:24px;
+  padding:25px;
+  box-shadow:0 12px 35px rgba(65,40,10,.06)
+}
+
+.feature b{
+  display:block;
+  margin:10px 0
+}
+
+.feature p{
+  color:var(--muted);
+  line-height:1.6;
+  font-size:14px
+}
+
+.shop{
+  background:#f7efd0
+}
+
+.product-grid{
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  gap:40px;
+  align-items:center
+}
+
+.product-photo{
+  background:linear-gradient(145deg,#fffdf3,#efe4bd);
+  border-radius:30px;
+  padding:30px;
+  border:1px solid var(--line)
+}
+
+.product-photo img{
+  width:100%;
+  display:block;
+  border-radius:20px
+}
+
+.price{
+  font:600 46px Georgia;
+  margin:15px 0;
+  color:#7c4d0c
+}
+
+.qty{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin:20px 0
+}
+
+.qty button{
+  width:42px;
+  height:42px;
+  border-radius:50%;
+  border:1px solid #b88a29;
+  background:#fff8dd;
+  cursor:pointer;
+  font-size:20px
+}
+
+.qty strong{
+  min-width:30px;
+  text-align:center
+}
+
+.add{
+  width:100%;
+  padding:16px;
+  border:0;
+  border-radius:999px;
+  background:var(--brown);
+  color:white;
+  font-weight:800;
+  font-size:16px;
+  cursor:pointer
+}
+
+.trust{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+  margin-top:18px
+}
+
+.pill{
+  border:1px solid #d6b75e;
+  border-radius:999px;
+  padding:8px 12px;
+  font-size:12px;
+  background:#fffaf0
+}
+
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:18px
+}
+
+.gallery .card{
+  padding:10px
+}
+
+.gallery img{
+  width:100%;
+  aspect-ratio:1/1;
+  object-fit:cover;
+  border-radius:16px
+}
+
+.gallery figcaption{
+  padding:12px;
+  font-weight:700
+}
+
+.nutrition{
+  display:grid;
+  grid-template-columns:.9fr 1.1fr;
+  gap:40px;
+  align-items:start
+}
+
+.table{
+  width:100%;
+  border-collapse:collapse;
+  background:#fffaf0;
+  border-radius:18px;
+  overflow:hidden
+}
+
+.table td{
+  padding:13px 16px;
+  border-bottom:1px solid var(--line)
+}
+
+.table td:last-child{
+  text-align:right;
+  font-weight:700
+}
+
+.track{
+  background:var(--brown);
+  color:#fff
+}
+
+.track-box{
+  max-width:850px;
+  margin:auto;
+  background:#3a1e0d;
+  border:1px solid rgba(255,215,0,.2);
+  padding:30px;
+  border-radius:28px
+}
+
+.track-form{
+  display:flex;
+  gap:10px
+}
+
+.track-form input{
+  flex:1;
+  padding:15px;
+  border-radius:999px;
+  border:0
+}
+
+.track-form button{
+  padding:15px 22px;
+  border-radius:999px;
+  border:0;
+  background:var(--gold);
+  font-weight:800;
+  cursor:pointer
+}
+
+.timeline{
+  display:flex;
+  justify-content:space-between;
+  gap:8px;
+  margin-top:35px
+}
+
+.step{
+  flex:1;
+  text-align:center;
+  color:#9d8b78
+}
+
+.step.on{
+  color:#ffe18a
+}
+
+.dot{
+  width:18px;
+  height:18px;
+  border-radius:50%;
+  border:2px solid currentColor;
+  margin:0 auto 8px
+}
+
+.step.on .dot{
+  background:var(--gold);
+  box-shadow:0 0 20px rgba(255,215,0,.5)
+}
+
+.footer{
+  background:#170b04;
+  color:#dbcbb5;
+  padding:45px 7vw;
+  display:flex;
+  justify-content:space-between;
+  gap:30px;
+  flex-wrap:wrap
+}
+
+.footer b{
+  color:var(--gold);
+  font-family:Georgia;
+  font-size:22px
+}
+
+.modal{
+  position:fixed;
+  inset:0;
+  background:rgba(20,8,2,.7);
+  display:none;
+  place-items:center;
+  z-index:100;
+  padding:18px
+}
+
+.modal.open{
+  display:grid
+}
+
+.modal-box{
+  background:#fff9e7;
+  max-width:620px;
+  width:100%;
+  max-height:90vh;
+  overflow:auto;
+  border-radius:28px;
+  padding:28px;
+  box-shadow:var(--shadow)
+}
+
+.modal-head{
+  display:flex;
+  justify-content:space-between;
+  align-items:center
+}
+
+.close{
+  border:0;
+  background:transparent;
+  font-size:28px;
+  cursor:pointer
+}
+
+.form-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px
+}
+
+.form-grid input,
+.form-grid textarea,
+.form-grid select{
+  padding:13px;
+  border:1px solid #d9c58c;
+  border-radius:12px;
+  background:#fffdf5
+}
+
+.form-grid textarea{
+  grid-column:1/-1;
+  min-height:90px
+}
+
+.full{
+  grid-column:1/-1
+}
+
+.pay-options{
+  display:flex;
+  gap:10px;
+  flex-wrap:wrap;
+  margin:15px 0
+}
+
+.pay-option{
+  border:1px solid #cbb36d;
+  padding:12px;
+  border-radius:12px;
+  cursor:pointer
+}
+
+.pay-option input{
+  margin-right:6px
+}
+
+.cart-row{
+  display:flex;
+  justify-content:space-between;
+  gap:10px;
+  padding:12px 0;
+  border-bottom:1px solid var(--line)
+}
+
+.admin-link{
+  font-size:12px;
+  color:#bda17e
+}
+
+.track-loading{
+  text-align:center;
+  padding:20px;
+  color:#ffe18a
+}
+
+.track-error{
+  background:rgba(255,80,50,.12);
+  border:1px solid rgba(255,100,70,.35);
+  border-radius:14px;
+  padding:15px;
+  color:#ffd0c5
+}
+
+.order-info{
+  background:rgba(255,215,0,.06);
+  border:1px solid rgba(255,215,0,.18);
+  padding:18px;
+  border-radius:18px;
+  margin-top:20px
+}
+
+.order-info-row{
+  display:flex;
+  justify-content:space-between;
+  gap:15px;
+  padding:7px 0;
+  border-bottom:1px solid rgba(255,255,255,.08)
+}
+
+.order-info-row:last-child{
+  border-bottom:0
+}
+
+.status-badge{
+  display:inline-block;
+  padding:7px 13px;
+  border-radius:999px;
+  background:var(--gold);
+  color:#2b1707;
+  font-weight:800;
+  font-size:12px
+}
+
+.items-list{
+  margin-top:15px;
+  padding-top:10px;
+  border-top:1px solid rgba(255,255,255,.1)
+}
+
+.item-line{
+  display:flex;
+  justify-content:space-between;
+  gap:15px;
+  padding:8px 0
+}
+
+@media(max-width:900px){
+
+  .navlinks{
+    display:none
+  }
+
+  .hero{
+    grid-template-columns:1fr
+  }
+
+  .hero-visual{
+    min-height:560px
+  }
+
+  .features{
+    grid-template-columns:1fr 1fr
+  }
+
+  .product-grid,
+  .nutrition{
+    grid-template-columns:1fr
+  }
+
+  .gallery{
+    grid-template-columns:1fr 1fr
+  }
+}
+
+@media(max-width:600px){
+
+  .hero-copy{
+    padding:65px 6vw
+  }
+
+  .hero h1{
+    font-size:52px
+  }
+
+  .hero-visual{
+    min-height:500px
+  }
+
+  .jar-wrap{
+    width:62%
+  }
+
+  .features,
+  .gallery{
+    grid-template-columns:1fr
+  }
+
+  .section{
+    padding:65px 6vw
+  }
+
+  .form-grid{
+    grid-template-columns:1fr
+  }
+
+  .form-grid textarea,
+  .full{
+    grid-column:auto
+  }
+
+  .timeline{
+    overflow:auto
+  }
+
+  .step{
+    min-width:120px
+  }
+
+  .track-form{
+    flex-direction:column
+  }
+
+  .order-info-row{
+    flex-direction:column;
+    gap:3px
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header class="nav">
+
+  <a class="logo" href="#">
+    <div class="logo-mark">PV</div>
+
+    <div>
+      <b>PURE VEDA</b>
+      <small>
+        FARM · CULTIVATING PURITY, NURTURING WELLNESS
+      </small>
+    </div>
+  </a>
+
+  <nav class="navlinks">
+    <a href="#about">About</a>
+    <a href="#benefits">Benefits</a>
+    <a href="#product">Product</a>
+    <a href="#nutrition">Nutrition</a>
+    <a href="#track">Track Order</a>
+  </nav>
+
+  <button class="cart-btn" onclick="openCart()">
+    Cart
+    <span id="cartCount">0</span>
+  </button>
+
+</header>
+
+
+<main>
+
+<section class="hero">
+
+  <div class="hero-copy">
+
+    <div class="eyebrow">
+      TRADITIONALLY PREPARED · PRODUCT OF INDIA
+    </div>
+
+    <h1>
+      Pure <em>Gold</em><br>
+      from Nature:<br>
+      Pure Cow Ghee
+    </h1>
+
+    <p>
+      Traditionally prepared pure cow ghee from
+      <b>Pure Veda Farm</b>, crafted with the timeless
+      spirit of Indian ghee-making. Rich aroma,
+      golden goodness and a simple promise of purity.
+    </p>
+
+    <div class="cta">
+
+      <button
+        class="primary"
+        onclick="document.getElementById('product').scrollIntoView()"
+      >
+        Shop 500 ml
+      </button>
+
+      <a class="secondary" href="#track">
+        Track Order
+      </a>
+
+    </div>
+
+    <div class="trust">
+      <span class="pill">🌿 100% Natural</span>
+      <span class="pill">🫙 Glass Jar</span>
+      <span class="pill">✨ Rich Aroma</span>
+    </div>
+
+  </div>
+
+
+  <div class="hero-visual">
+
+    <div id="three"></div>
+
+    <div class="jar-wrap">
+      <img
+        src="assets/front.jpg"
+        alt="Pure Veda Farm Pure Cow Ghee"
+      >
+    </div>
+
+    <div class="three-hint">
+      Move / drag · Interactive golden ghee
+    </div>
+
+  </div>
+
+</section>
+
+
+<section id="about" class="section">
+
+  <div class="section-head">
+
+    <div class="eyebrow">
+      THE PURE VEDA PROMISE
+    </div>
+
+    <h2>
+      Simple ingredients. Traditional character.
+    </h2>
+
+    <p>
+      Pure Veda Farm presents traditionally prepared
+      pure cow ghee in a premium glass jar, with the
+      product information and label details preserved
+      from the supplied packaging.
+    </p>
+
+  </div>
+
+
+  <div class="features">
+
+    <div class="feature">
+      <div>🌿</div>
+      <b>100% Natural</b>
+      <p>
+        Presented as a natural pure cow ghee product
+        on the supplied label.
+      </p>
+    </div>
+
+    <div class="feature">
+      <div>🥣</div>
+      <b>Traditional Preparation</b>
+      <p>
+        The front label describes the ghee as
+        traditionally prepared and made the
+        traditional way.
+      </p>
+    </div>
+
+    <div class="feature">
+      <div>✨</div>
+      <b>Rich Aroma</b>
+      <p>
+        A rich aroma is highlighted as a key product
+        characteristic on the packaging.
+      </p>
+    </div>
+
+    <div class="feature">
+      <div>🇮🇳</div>
+      <b>Product of India</b>
+      <p>
+        Pack label identifies the product as a
+        Product of India.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+
+<section id="benefits" class="section shop">
+
+  <div class="section-head">
+
+    <div class="eyebrow">
+      BENEFITS OF BILONA GHEE
+    </div>
+
+    <h2>
+      Made for everyday goodness.
+    </h2>
+
+    <p>
+      The following benefit statements are presented
+      from the supplied package label.
+    </p>
+
+  </div>
+
+
+  <div class="features">
+
+    <div class="feature">
+      <b>Aids Digestion</b>
+      <p>
+        Helps improve digestion and support gut health.
+      </p>
+    </div>
+
+    <div class="feature">
+      <b>Boosts Immunity</b>
+      <p>
+        Strengthens immunity and helps fight infections.
+      </p>
+    </div>
+
+    <div class="feature">
+      <b>Improves Brain Function</b>
+      <p>
+        Enhances memory, focus and overall brain health.
+      </p>
+    </div>
+
+    <div class="feature">
+      <b>Strengthens Bones</b>
+      <p>
+        Rich in vitamins A, D, E & K which support
+        strong bones.
+      </p>
+    </div>
+
+    <div class="feature">
+      <b>Good for Heart</b>
+      <p>
+        Contains healthy fats that support heart health.
+      </p>
+    </div>
+
+    <div class="feature">
+      <b>Nourishes Skin & Hair</b>
+      <p>
+        Natural nourishment for healthy skin and
+        shiny hair.
+      </p>
+    </div>
+
+  </div>
+
+</section>
+
+
+<section id="product" class="section">
+
+  <div class="product-grid">
+
+    <div class="product-photo">
+
+      <img
+        src="assets/front.jpg"
+        alt="Pure Veda Farm 500 ml Pure Cow Ghee"
+      >
+
+    </div>
+
+
+    <div>
+
+      <div class="eyebrow">
+        SHOP PURE VEDA FARM
+      </div>
+
+      <h2>
+        Pure Cow Ghee · 500 ml
+      </h2>
+
+      <p>
+        Net quantity:
+        <b>500 ml (Approx. 455 g)</b>
+      </p>
+
+      <div class="price" id="price">
+        ₹499
+      </div>
+
+
+      <div class="qty">
+
+        <button onclick="changeQty(-1)">
+          −
+        </button>
+
+        <strong id="qty">
+          1
+        </strong>
+
+        <button onclick="changeQty(1)">
+          +
+        </button>
+
+      </div>
+
+
+      <button
+        class="add"
+        onclick="addToCart()"
+      >
+        ADD TO CART
+      </button>
+
+
+      <div class="trust">
+
+        <span class="pill">
+          Secure Checkout
+        </span>
+
+        <span class="pill">
+          UPI / Card / Net Banking*
+        </span>
+
+        <span class="pill">
+          COD*
+        </span>
+
+      </div>
+
+
+      <p style="font-size:12px;color:#8b735f">
+        *Payment methods become live after Razorpay
+        configuration. Demo mode is enabled in this starter.
+      </p>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="section shop">
+
+  <div class="section-head">
+
+    <div class="eyebrow">
+      PRODUCT GALLERY
+    </div>
+
+    <h2>
+      See the jar from every side.
+    </h2>
+
+  </div>
+
+
+  <div class="gallery">
+
+    <figure class="card">
+      <img
+        src="assets/front.jpg"
+        alt="Front label"
+      >
+      <figcaption>
+        Front label
+      </figcaption>
+    </figure>
+
+
+    <figure class="card">
+      <img
+        src="assets/back.jpg"
+        alt="Back label"
+      >
+      <figcaption>
+        Benefits & manufacturer
+      </figcaption>
+    </figure>
+
+
+    <figure class="card">
+      <img
+        src="assets/nutrition.jpg"
+        alt="Nutrition label"
+      >
+      <figcaption>
+        Nutrition information
+      </figcaption>
+    </figure>
+
+  </div>
+
+</section>
+
+
+<section id="nutrition" class="section">
+
+  <div class="nutrition">
+
+    <div>
+
+      <div class="eyebrow">
+        NUTRITION INFORMATION
+      </div>
+
+      <h2>
+        As printed on the supplied label.
+      </h2>
+
+      <p style="color:var(--muted);line-height:1.8">
+        Approximate values per 100 g shown in the
+        photographed nutrition panel. Always verify
+        the physical pack before publishing regulatory claims.
+      </p>
+
+      <img
+        src="assets/nutrition.jpg"
+        style="width:100%;border-radius:20px;margin-top:20px"
+        alt="Nutrition label"
+      >
+
+    </div>
+
+
+    <table class="table">
+
+      <tr>
+        <td>Energy</td>
+        <td>896.33 kcal</td>
+      </tr>
+
+      <tr>
+        <td>Total Fat</td>
+        <td>99.67 g</td>
+      </tr>
+
+      <tr>
+        <td>Saturated Fat</td>
+        <td>61.53 g</td>
+      </tr>
+
+      <tr>
+        <td>Trans Fat</td>
+        <td>0 g</td>
+      </tr>
+
+      <tr>
+        <td>Cholesterol</td>
+        <td>240 mg</td>
+      </tr>
+
+      <tr>
+        <td>Sodium</td>
+        <td>643 mg</td>
+      </tr>
+
+      <tr>
+        <td>Carbohydrate</td>
+        <td>0 g</td>
+      </tr>
+
+      <tr>
+        <td>Dietary Fiber</td>
+        <td>0 g</td>
+      </tr>
+
+      <tr>
+        <td>Protein</td>
+        <td>0 g</td>
+      </tr>
+
+      <tr>
+        <td>Sugar</td>
+        <td>0 g</td>
+      </tr>
+
+    </table>
+
+  </div>
+
+</section>
+
+
+<section id="track" class="section track">
+
+  <div class="section-head">
+
+    <div class="eyebrow">
+      ORDER TRACKING
+    </div>
+
+    <h2>
+      Know where your order is.
+    </h2>
+
+    <p style="color:#cdbba6">
+      Enter your order number after checkout.
+      Orders are now fetched from Firebase through
+      the backend API.
+    </p>
+
+  </div>
+
+
+  <div class="track-box">
+
+    <div class="track-form">
+
+      <input
+        id="trackInput"
+        placeholder="e.g. PVF-20260815-7240"
+        autocomplete="off"
+      >
+
+      <button onclick="trackOrder()">
+        Track
+      </button>
+
+    </div>
+
+
+    <div
+      id="trackResult"
+      style="margin-top:20px"
+    ></div>
+
+  </div>
+
+</section>
+
+</main>
+
+
+<footer class="footer">
+
+  <div>
+
+    <b>PURE VEDA FARM</b>
+
+    <p>
+      Indore, Madhya Pradesh, India · PIN 452010
+    </p>
+
+    <p>
+      Phone: 9630870582 · purevedafarms@gmail.com
+    </p>
+
+  </div>
+
+
+  <div>
+
+    <p>
+      FSSAI Lic. No. 21426850006079
+    </p>
+
+    <p>
+      Traditionally Prepared · Pure Cow Ghee · 500 ml
+    </p>
+
+    <a
+      class="admin-link"
+      href="admin.html"
+    >
+      Admin Dashboard →
+    </a>
+
+  </div>
+
+</footer>
+
+
+<!-- ========================================================
+     CHECKOUT MODAL
+======================================================== -->
+
+<div
+  class="modal"
+  id="checkoutModal"
+>
+
+  <div class="modal-box">
+
+    <div class="modal-head">
+
+      <h2>
+        Checkout
+      </h2>
+
+      <button
+        class="close"
+        onclick="closeModal('checkoutModal')"
+      >
+        ×
+      </button>
+
+    </div>
+
+
+    <div id="checkoutSummary"></div>
+
+
+    <form
+      id="checkoutForm"
+      onsubmit="placeOrder(event)"
+    >
+
+      <div class="form-grid">
+
+        <input
+          required
+          name="name"
+          placeholder="Full name"
+        >
+
+        <input
+          required
+          name="phone"
+          placeholder="Mobile number"
+        >
+
+        <input
+          required
+          type="email"
+          name="email"
+          placeholder="Email"
+        >
+
+        <input
+          required
+          name="pincode"
+          placeholder="Pincode"
+        >
+
+        <input
+          required
+          name="city"
+          placeholder="City"
+        >
+
+        <input
+          required
+          name="state"
+          placeholder="State"
+        >
+
+        <textarea
+          required
+          name="address"
+          class="full"
+          placeholder="Full delivery address"
+        ></textarea>
+
+      </div>
+
+
+      <div class="pay-options">
+
+        <label class="pay-option">
+
+          <input
+            type="radio"
+            name="payment"
+            value="online"
+            checked
+          >
+
+          Online payment
+
+        </label>
+
+
+        <label class="pay-option">
+
+          <input
+            type="radio"
+            name="payment"
+            value="cod"
+          >
+
+          Cash on delivery
+
+        </label>
+
+      </div>
+
+
+      <button
+        class="add full"
+        type="submit"
+        id="placeOrderButton"
+      >
+        PLACE ORDER
+      </button>
+
+    </form>
+
+  </div>
+
+</div>
+
+
+<!-- ========================================================
+     CART MODAL
+======================================================== -->
+
+<div
+  class="modal"
+  id="cartModal"
+>
+
+  <div class="modal-box">
+
+    <div class="modal-head">
+
+      <h2>
+        Your Cart
+      </h2>
+
+      <button
+        class="close"
+        onclick="closeModal('cartModal')"
+      >
+        ×
+      </button>
+
+    </div>
+
+
+    <div id="cartItems"></div>
+
+
+    <button
+      class="add"
+      onclick="openCheckout()"
+    >
+      CHECKOUT
+    </button>
+
+  </div>
+
+</div>
+
+
+<!-- ========================================================
+     THREE.JS
+======================================================== -->
+
+<script src="https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.min.js"></script>
+
+
+<script>
+
+/* ==========================================================
+   PRODUCT
+========================================================== */
+
+const PRODUCT = {
+  name: "Pure Cow Ghee",
+  size: "500 ml",
+  price: 499
+};
+
+
+/* ==========================================================
+   CART
+   IMPORTANT:
+   localStorage is used ONLY for cart.
+   Orders are NOT stored in localStorage.
+========================================================== */
+
+let qty = 1;
+
+let cart =
+  JSON.parse(
+    localStorage.getItem("pvf_cart") || "null"
+  ) || [];
+
+
+/* ==========================================================
+   QUANTITY
+========================================================== */
+
+function changeQty(n){
+
+  qty = Math.max(
+    1,
+    qty + n
+  );
+
+  document.getElementById(
+    "qty"
+  ).textContent = qty;
+}
+
+
+/* ==========================================================
+   SAVE CART
+========================================================== */
+
+function saveCart(){
+
+  localStorage.setItem(
+    "pvf_cart",
+    JSON.stringify(cart)
+  );
+
+  document.getElementById(
+    "cartCount"
+  ).textContent =
+    cart.reduce(
+      (s,x) =>
+        s + Number(x.qty || 0),
+      0
+    );
+}
+
+
+/* ==========================================================
+   ADD TO CART
+========================================================== */
+
+function addToCart(){
+
+  const existing =
+    cart.find(
+      x =>
+        x.name === PRODUCT.name &&
+        x.size === PRODUCT.size
+    );
+
+  if(existing){
+
+    existing.qty =
+      Number(existing.qty || 0) +
+      qty;
+
+  }else{
+
+    cart.push({
+      ...PRODUCT,
+      qty
+    });
+
+  }
+
+  saveCart();
+
+  qty = 1;
+
+  document.getElementById(
+    "qty"
+  ).textContent = "1";
+
+  openCart();
+}
+
+
+/* ==========================================================
+   OPEN CART
+========================================================== */
+
+function openCart(){
+
+  renderCart();
+
+  document.getElementById(
+    "cartModal"
+  ).classList.add("open");
+}
+
+
+/* ==========================================================
+   CLOSE MODAL
+========================================================== */
+
+function closeModal(id){
+
+  document.getElementById(
+    id
+  ).classList.remove("open");
+}
+
+
+/* ==========================================================
+   RENDER CART
+========================================================== */
+
+function renderCart(){
+
+  const el =
+    document.getElementById(
+      "cartItems"
+    );
+
+  if(!cart.length){
+
+    el.innerHTML =
+      "<p>Your cart is empty.</p>";
+
+    return;
+  }
+
+
+  const total =
+    cart.reduce(
+      (s,x) =>
+        s +
+        Number(x.price || 0) *
+        Number(x.qty || 0),
+      0
+    );
+
+
+  el.innerHTML =
+    cart.map(
+      x => `
+        <div class="cart-row">
+
+          <div>
+            <b>${escapeHtml(x.name)}</b>
+            <br>
+            ${escapeHtml(x.size)}
+            × ${Number(x.qty || 0)}
+          </div>
+
+          <b>
+            ₹${(
+              Number(x.price || 0) *
+              Number(x.qty || 0)
+            ).toFixed(0)}
+          </b>
+
+        </div>
+      `
+    ).join("") +
+
+    `
+      <p>
+        <b>
+          Total: ₹${total.toFixed(0)}
+        </b>
+      </p>
+    `;
+}
+
+
+/* ==========================================================
+   OPEN CHECKOUT
+========================================================== */
+
+function openCheckout(){
+
+  if(!cart.length){
+
+    alert(
+      "Please add a product first."
+    );
+
+    return;
+  }
+
+
+  closeModal(
+    "cartModal"
+  );
+
+
+  const total =
+    cart.reduce(
+      (s,x) =>
+        s +
+        Number(x.price || 0) *
+        Number(x.qty || 0),
+      0
+    );
+
+
+  document.getElementById(
+    "checkoutSummary"
+  ).innerHTML = `
+    <p>
+      Order total:
+      <b>₹${total.toFixed(0)}</b>
+    </p>
+  `;
+
+
+  document.getElementById(
+    "checkoutModal"
+  ).classList.add("open");
+}
+
+
+/* ==========================================================
+   PLACE ORDER
+   IMPORTANT:
+   This sends order to BACKEND.
+   Backend saves it in Firebase.
+   No pvf_orders localStorage.
+========================================================== */
+
+async function placeOrder(e){
+
+  e.preventDefault();
+
+
+  if(!cart.length){
+
+    alert(
+      "Your cart is empty."
+    );
+
+    return;
+  }
+
+
+  const form =
+    e.target;
+
+  const formData =
+    new FormData(form);
+
+
+  const customer = {
+
+    name:
+      String(
+        formData.get("name") || ""
+      ).trim(),
+
+    phone:
+      String(
+        formData.get("phone") || ""
+      ).trim(),
+
+    email:
+      String(
+        formData.get("email") || ""
+      ).trim(),
+
+    pincode:
+      String(
+        formData.get("pincode") || ""
+      ).trim(),
+
+    city:
+      String(
+        formData.get("city") || ""
+      ).trim(),
+
+    state:
+      String(
+        formData.get("state") || ""
+      ).trim(),
+
+    address:
+      String(
+        formData.get("address") || ""
+      ).trim()
+
+  };
+
+
+  const payment =
+    String(
+      formData.get("payment") || "online"
+    ).toUpperCase();
+
+
+  const items =
+    cart.map(
+      item => {
+
+        const price =
+          Number(
+            item.price || 0
+          );
+
+        const quantity =
+          Math.max(
+            1,
+            Number(
+              item.qty || 1
+            )
+          );
+
+
+        return {
+
+          name:
+            item.name,
+
+          size:
+            item.size,
+
+          price,
+
+          quantity,
+
+          qty:
+            quantity,
+
+          amount:
+            price * quantity
+
+        };
+
+      }
+    );
+
+
+  const button =
+    document.getElementById(
+      "placeOrderButton"
+    );
+
+
+  button.disabled = true;
+
+  button.textContent =
+    "CREATING ORDER...";
+
+
+  try{
+
+    const response =
+      await fetch(
+        "/api/orders",
+        {
+          method:"POST",
+
+          headers:{
+            "Content-Type":
+              "application/json"
+          },
+
+          body:
+            JSON.stringify({
+
+              customer,
+
+              items,
+
+              paymentMethod:
+                payment,
+
+              payment
+
+            })
+
+        }
+      );
+
+
+    const data =
+      await response.json();
+
+
+    if(
+      !response.ok ||
+      !data.success
+    ){
+
+      throw new Error(
+        data.message ||
+        data.error ||
+        "Unable to create order."
+      );
+
+    }
+
+
+    /*
+      Backend returns:
+
+      orderId
+      orderNumber
+      order
+      firebase
+
+      We prefer orderNumber for customer tracking.
+    */
+
+    const trackingId =
+      data.orderNumber ||
+      data.order?.orderNumber ||
+      data.orderId ||
+      data.order?.id;
+
+
+    if(!trackingId){
+
+      throw new Error(
+        "Order created but tracking ID was not returned by server."
+      );
+
+    }
+
+
+    /*
+      IMPORTANT:
+
+      We do NOT save order in localStorage.
+
+      Cart is cleared because checkout completed.
+    */
+
+    cart = [];
+
+    saveCart();
+
+
+    closeModal(
+      "checkoutModal"
+    );
+
+
+    form.reset();
+
+
+    document.getElementById(
+      "trackInput"
+    ).value =
+      trackingId;
+
+
+    document.getElementById(
+      "track"
+    ).scrollIntoView({
+      behavior:"smooth"
+    });
+
+
+    /*
+      Fetch fresh order directly
+      from Firebase through backend.
+    */
+
+    await trackOrder(
+      trackingId
+    );
+
+
+    alert(
+      "Order created successfully!\n\n" +
+      "Order Number: " +
+      trackingId
+    );
+
+
+  }catch(error){
+
+    console.error(
+      "PLACE ORDER ERROR:",
+      error
+    );
+
+
+    alert(
+      "Unable to create order.\n\n" +
+      error.message
+    );
+
+
+  }finally{
+
+    button.disabled = false;
+
+    button.textContent =
+      "PLACE ORDER";
+
+  }
+
+}
+
+
+/* ==========================================================
+   TRACK ORDER
+   GET /api/orders/:id
+========================================================== */
+
+async function trackOrder(
+  providedId = null
+){
+
+  const input =
+    document.getElementById(
+      "trackInput"
+    );
+
+
+  const el =
+    document.getElementById(
+      "trackResult"
+    );
+
+
+  const id =
+    String(
+      providedId !== null
+        ? providedId
+        : input.value
+    ).trim();
+
+
+  if(!id){
+
+    el.innerHTML = `
+      <div class="track-error">
+        Please enter your order number.
+      </div>
+    `;
+
+    return;
+  }
+
+
+  /*
+    Show entered value.
+  */
+
+  input.value = id;
+
+
+  el.innerHTML = `
+    <div class="track-loading">
+      Loading order from Firebase...
+    </div>
+  `;
+
+
+  try{
+
+    /*
+      IMPORTANT:
+      No localStorage here.
+
+      Backend handles:
+      /api/orders/:id
+
+      It supports:
+      - Firebase document ID
+      - orderNumber
+    */
+
+    const response =
+      await fetch(
+        "/api/orders/" +
+        encodeURIComponent(id) +
+        "?t=" +
+        Date.now(),
+        {
+          method:"GET",
+          cache:"no-store",
+          headers:{
+            "Accept":
+              "application/json"
+          }
+        }
+      );
+
+
+    const data =
+      await response.json();
+
+
+    if(
+      !response.ok ||
+      !data.success ||
+      !data.order
+    ){
+
+      throw new Error(
+        data.message ||
+        data.error ||
+        "Order not found."
+      );
+
+    }
+
+
+    renderTrackedOrder(
+      data.order
+    );
+
+
+  }catch(error){
+
+    console.error(
+      "TRACK ORDER ERROR:",
+      error
+    );
+
+
+    el.innerHTML = `
+      <div class="track-error">
+
+        <b>Order not found.</b>
+
+        <p style="margin:8px 0 0">
+          Please check your order number and try again.
+        </p>
+
+        <small>
+          ${escapeHtml(error.message)}
+        </small>
+
+      </div>
+    `;
+
+  }
+
+}
+
+
+/* ==========================================================
+   RENDER FIREBASE ORDER
+========================================================== */
+
+function renderTrackedOrder(
+  order
+){
+
+  const el =
+    document.getElementById(
+      "trackResult"
+    );
+
+
+  const orderNumber =
+    order.orderNumber ||
+    order.id ||
+    "Unknown";
+
+
+  const customer =
+    order.customer ||
+    {};
+
+
+  const total =
+    Number(
+      order.total ??
+      order.amount ??
+      order.subtotal ??
+      0
+    );
+
+
+  const status =
+    String(
+      order.orderStatus ||
+      order.status ||
+      "PLACED"
+    ).toUpperCase();
+
+
+  const paymentStatus =
+    String(
+      order.paymentStatus ||
+      "PENDING"
+    ).toUpperCase();
+
+
+  const createdAt =
+    order.createdAt
+      ? formatDate(
+          order.createdAt
+        )
+      : "—";
+
+
+  const updatedAt =
+    order.updatedAt
+      ? formatDate(
+          order.updatedAt
+        )
+      : "—";
+
+
+  /*
+    These match your backend statuses.
+  */
+
+  const steps = [
+
+    "PLACED",
+
+    "PAYMENT CONFIRMED",
+
+    "PROCESSING",
+
+    "PACKED",
+
+    "SHIPPED",
+
+    "OUT FOR DELIVERY",
+
+    "DELIVERED"
+
+  ];
+
+
+  /*
+    CANCELLED is handled separately.
+  */
+
+  let current =
+    steps.indexOf(
+      status
+    );
+
+
+  if(current < 0){
+
+    /*
+      If status is something unexpected,
+      show the first step rather than breaking.
+    */
+
+    current = 0;
+
+  }
+
+
+  /*
+    If payment is still pending and
+    order status is PLACED,
+    keep only PLACED active.
+  */
+
+  const isCancelled =
+    status === "CANCELLED";
+
+
+  let timelineHtml = "";
+
+
+  if(isCancelled){
+
+    timelineHtml = `
+      <div style="
+        margin-top:25px;
+        text-align:center;
+      ">
+
+        <span
+          class="status-badge"
+          style="
+            background:#ff6347;
+            color:white;
+          "
+        >
+          ORDER CANCELLED
+        </span>
+
+      </div>
+    `;
+
+  }else{
+
+    timelineHtml = `
+      <div class="timeline">
+
+        ${steps.map(
+          (step,index) => {
+
+            const active =
+              index <= current;
+
+            return `
+              <div
+                class="step ${
+                  active
+                    ? "on"
+                    : ""
+                }"
+              >
+
+                <div class="dot"></div>
+
+                <small>
+                  ${escapeHtml(step)}
+                </small>
+
+              </div>
+            `;
+
+          }
+        ).join("")}
+
+      </div>
+    `;
+
+  }
+
+
+  /*
+    Items
+  */
+
+  const items =
+    Array.isArray(
+      order.items
+    )
+      ? order.items
+      : [];
+
+
+  let itemsHtml =
+    "";
+
+
+  if(items.length){
+
+    itemsHtml = `
+      <div class="items-list">
+
+        <h4 style="margin:0 0 8px">
+          Order Items
+        </h4>
+
+        ${items.map(
+          item => {
+
+            const quantity =
+              Number(
+                item.quantity ??
+                item.qty ??
+                1
+              );
+
+
+            const amount =
+              Number(
+                item.amount ??
+                (
+                  Number(
+                    item.price || 0
+                  ) *
+                  quantity
+                )
+              );
+
+
+            return `
+              <div class="item-line">
+
+                <span>
+                  ${escapeHtml(
+                    item.name ||
+                    "Product"
+                  )}
+                  ${
+                    item.size
+                      ? " · " +
+                        escapeHtml(
+                          item.size
+                        )
+                      : ""
+                  }
+                  × ${quantity}
+                </span>
+
+                <b>
+                  ₹${amount.toFixed(0)}
+                </b>
+
+              </div>
+            `;
+
+          }
+        ).join("")}
+
+      </div>
+    `;
+
+  }
+
+
+  el.innerHTML = `
+
+    <h3
+      style="
+        margin:0 0 8px;
+        color:#ffe18a;
+      "
+    >
+      ${escapeHtml(orderNumber)}
+    </h3>
+
+
+    <p
+      style="
+        margin:0;
+        color:#cdbba6;
+      "
+    >
+      ${escapeHtml(
+        customer.name ||
+        "Customer"
+      )}
+
+      ·
+
+      ₹${total.toFixed(0)}
+    </p>
+
+
+    <div class="order-info">
+
+      <div class="order-info-row">
+
+        <span>
+          Order Status
+        </span>
+
+        <span class="status-badge">
+          ${escapeHtml(status)}
+        </span>
+
+      </div>
+
+
+      <div class="order-info-row">
+
+        <span>
+          Payment
+        </span>
+
+        <strong>
+          ${escapeHtml(paymentStatus)}
+        </strong>
+
+      </div>
+
+
+      <div class="order-info-row">
+
+        <span>
+          Customer
+        </span>
+
+        <strong>
+          ${escapeHtml(
+            customer.name || "—"
+          )}
+        </strong>
+
+      </div>
+
+
+      <div class="order-info-row">
+
+        <span>
+          Phone
+        </span>
+
+        <strong>
+          ${escapeHtml(
+            customer.phone || "—"
+          )}
+        </strong>
+
+      </div>
+
+
+      <div class="order-info-row">
+
+        <span>
+          City
+        </span>
+
+        <strong>
+          ${escapeHtml(
+            customer.city || "—"
+          )}
+        </strong>
+
+      </div>
+
+
+      <div class="order-info-row">
+
+        <span>
+          Ordered
+        </span>
+
+        <strong>
+          ${escapeHtml(createdAt)}
+        </strong>
+
+      </div>
+
+
+      <div class="order-info-row">
+
+        <span>
+          Last Updated
+        </span>
+
+        <strong>
+          ${escapeHtml(updatedAt)}
+        </strong>
+
+      </div>
+
+
+      ${itemsHtml}
+
+    </div>
+
+
+    ${timelineHtml}
+
+  `;
+
+}
+
+
+/* ==========================================================
+   DATE FORMATTER
+========================================================== */
+
+function formatDate(
+  value
+){
+
+  try{
+
+    const date =
+      new Date(value);
+
+
+    if(
+      Number.isNaN(
+        date.getTime()
+      )
+    ){
+
+      return String(value);
+
+    }
+
+
+    return date.toLocaleString(
+      "en-IN",
+      {
+        dateStyle:"medium",
+        timeStyle:"short"
+      }
+    );
+
+  }catch(error){
+
+    return String(value);
+
+  }
+
+}
+
+
+/* ==========================================================
+   HTML ESCAPE
+========================================================== */
+
+function escapeHtml(
+  value
+){
+
+  return String(
+    value ?? ""
+  )
+  .replace(
+    /&/g,
+    "&amp;"
+  )
+  .replace(
+    /</g,
+    "&lt;"
+  )
+  .replace(
+    />/g,
+    "&gt;"
+  )
+  .replace(
+    /"/g,
+    "&quot;"
+  )
+  .replace(
+    /'/g,
+    "&#039;"
+  );
+
+}
+
+
+/* ==========================================================
+   INITIAL CART COUNT
+========================================================== */
+
+saveCart();
+
+
+/* ==========================================================
+   THREE.JS INTERACTIVE GOLDEN GHEE DROP
+========================================================== */
+
+(function(){
+
+  const host =
+    document.getElementById(
+      "three"
+    );
+
+
+  if(
+    !host ||
+    !window.THREE
+  ){
+
+    return;
+
+  }
+
+
+  const scene =
+    new THREE.Scene();
+
+
+  const camera =
+    new THREE.PerspectiveCamera(
+      35,
+      host.clientWidth /
+      host.clientHeight,
+      .1,
+      100
+    );
+
+
+  camera.position.set(
+    0,
+    0,
+    5.2
+  );
+
+
+  const renderer =
+    new THREE.WebGLRenderer({
+      antialias:true,
+      alpha:true
+    });
+
+
+  renderer.setPixelRatio(
+    Math.min(
+      devicePixelRatio,
+      2
+    )
+  );
+
+
+  renderer.setSize(
+    host.clientWidth,
+    host.clientHeight
+  );
+
+
+  renderer.outputColorSpace =
+    THREE.SRGBColorSpace;
+
+
+  renderer.toneMapping =
+    THREE.ACESFilmicToneMapping;
+
+
+  renderer.toneMappingExposure =
+    1.2;
+
+
+  host.appendChild(
+    renderer.domElement
+  );
+
+
+  scene.add(
+    new THREE.HemisphereLight(
+      0xfff4c4,
+      0x170a03,
+      2.2
+    )
+  );
+
+
+  const a =
+    new THREE.DirectionalLight(
+      0xffe9a7,
+      5
+    );
+
+  a.position.set(
+    3,
+    4,
+    4
+  );
+
+  scene.add(a);
+
+
+  const b =
+    new THREE.DirectionalLight(
+      0xff9f18,
+      4
+    );
+
+  b.position.set(
+    -4,
+    1,
+    3
+  );
+
+  scene.add(b);
+
+
+  const p =
+    new THREE.PointLight(
+      0xffd34a,
+      10,
+      8
+    );
+
+  p.position.set(
+    1,
+    2,
+    -1
+  );
+
+  scene.add(p);
+
+
+  const pts = [
+
+    [0,1.42],
+    [.17,1.33],
+    [.34,1.15],
+    [.50,.92],
+    [.66,.62],
+    [.79,.28],
+    [.87,-.05],
+    [.88,-.33],
+    [.82,-.61],
+    [.69,-.86],
+    [.50,-1.04],
+    [.28,-1.18],
+    [0,-1.25]
+
+  ].map(
+    v =>
+      new THREE.Vector2(
+        v[0],
+        v[1]
+      )
+  );
+
+
+  const geo =
+    new THREE.LatheGeometry(
+      pts,
+      96
+    );
+
+
+  geo.computeVertexNormals();
+
+
+  const mat =
+    new THREE.MeshPhysicalMaterial({
+
+      color:0xffc62b,
+
+      roughness:.12,
+
+      metalness:.02,
+
+      transmission:.35,
+
+      thickness:1.2,
+
+      ior:1.46,
+
+      clearcoat:1,
+
+      clearcoatRoughness:.07,
+
+      emissive:0x6a3500,
+
+      emissiveIntensity:.18
+
+    });
+
+
+  const drop =
+    new THREE.Mesh(
+      geo,
+      mat
+    );
+
+
+  drop.scale.set(
+    .88,
+    .88,
+    .88
+  );
+
+
+  scene.add(drop);
+
+
+  const ring =
+    new THREE.Mesh(
+
+      new THREE.TorusGeometry(
+        1.08,
+        .018,
+        12,
+        100
+      ),
+
+      new THREE.MeshBasicMaterial({
+
+        color:0xffd85a,
+
+        transparent:true,
+
+        opacity:.32
+
+      })
+
+    );
+
+
+  ring.rotation.x =
+    Math.PI / 2;
+
+
+  ring.position.y =
+    -1.35;
+
+
+  scene.add(ring);
+
+
+  let px = 0;
+  let py = 0;
+  let tx = 0;
+  let ty = 0;
+
+  let drag = false;
+
+  let lx = 0;
+  let ly = 0;
+
+
+  host.addEventListener(
+    "pointermove",
+    e => {
+
+      const r =
+        host.getBoundingClientRect();
+
+
+      tx =
+        (e.clientX - r.left) /
+        r.width -
+        .5;
+
+
+      ty =
+        (e.clientY - r.top) /
+        r.height -
+        .5;
+
+
+      if(drag){
+
+        drop.rotation.y +=
+          (
+            e.clientX - lx
+          ) * .008;
+
+
+        drop.rotation.x +=
+          (
+            e.clientY - ly
+          ) * .008;
+
+      }
+
+
+      lx =
+        e.clientX;
+
+      ly =
+        e.clientY;
+
+    }
+  );
+
+
+  host.addEventListener(
+    "pointerdown",
+    e => {
+
+      drag = true;
+
+      lx =
+        e.clientX;
+
+      ly =
+        e.clientY;
+
+      host.setPointerCapture(
+        e.pointerId
+      );
+
+    }
+  );
+
+
+  host.addEventListener(
+    "pointerup",
+    () => {
+      drag = false;
+    }
+  );
+
+
+  host.addEventListener(
+    "pointerleave",
+    () => {
+      drag = false;
+    }
+  );
+
+
+  addEventListener(
+    "resize",
+    () => {
+
+      camera.aspect =
+        host.clientWidth /
+        host.clientHeight;
+
+
+      camera.updateProjectionMatrix();
+
+
+      renderer.setSize(
+        host.clientWidth,
+        host.clientHeight
+      );
+
+    }
+  );
+
+
+  const clock =
+    new THREE.Clock();
+
+
+  function loop(){
+
+    requestAnimationFrame(
+      loop
+    );
+
+
+    const t =
+      clock.getElapsedTime();
+
+
+    px +=
+      (
+        tx * .9 -
+        px
+      ) * .05;
+
+
+    py +=
+      (
+        ty * .6 -
+        py
+      ) * .05;
+
+
+    drop.position.y =
+      Math.sin(
+        t * 1.15
+      ) * .14;
+
+
+    drop.rotation.y +=
+      .004 +
+      px * .012;
+
+
+    drop.rotation.x +=
+      (
+        -py -
+        drop.rotation.x
+      ) * .035;
+
+
+    const s =
+      1 +
+      Math.sin(
+        t * 1.1
+      ) * .018;
+
+
+    drop.scale.set(
+      .88 * s,
+      .88 * s,
+      .88 * s
+    );
+
+
+    ring.rotation.z =
+      t * .15;
+
+
+    renderer.render(
+      scene,
+      camera
+    );
+
+  }
+
+
+  loop();
+
+})();
+
+</script>
+
+</body>
+</html>
+

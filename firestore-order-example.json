@@ -1,0 +1,30 @@
+{
+  "orderId": "PVF-20260813-1234",
+  "customerId": "uid",
+  "customer": {
+    "name": "Customer",
+    "phone": "98XXXXXXXX",
+    "email": "customer@example.com",
+    "address": "Full address",
+    "city": "Indore",
+    "state": "Madhya Pradesh",
+    "pincode": "452010"
+  },
+  "items": [
+    {
+      "name": "Pure Cow Ghee",
+      "size": "500 ml",
+      "qty": 1,
+      "unitPrice": 499
+    }
+  ],
+  "subtotal": 499,
+  "shipping": 0,
+  "total": 499,
+  "paymentMethod": "online",
+  "paymentStatus": "created",
+  "orderStatus": "PLACED",
+  "razorpayOrderId": "order_xxx",
+  "razorpayPaymentId": "",
+  "createdAt": "serverTimestamp"
+}
